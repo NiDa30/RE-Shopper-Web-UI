@@ -486,3 +486,46 @@ a { text-decoration: none; color: inherit; }
         justify-content: center;
     }
 }
+.newsletter-container {
+    padding: 40px 0;
+}
+
+.newsletter-box {
+    background: #f8f9ff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+    .input-group input {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        width: 250px;
+    }
+
+.input-icon {
+    font-size: 20px;
+}
+
+.note {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+    font-size: 12px;
+}
