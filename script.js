@@ -40,9 +40,10 @@ function renderProducts() {
     
     productGrid.innerHTML = '';
     
-    products.forEach(product => {
+    products.forEach((product, index) => {
+        const delayClass = index === 0 ? '' : 'delay-' + (index * 100);
         const card = document.createElement('div');
-        card.className = 'product-card';
+        card.className = `product-card reveal ${delayClass}`;
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
             <div class="product-info">
@@ -114,7 +115,28 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Khởi tạo Intersection Observer cho hiệu ứng xuất hiện (Reveal)
+function initRevealAnimations() {
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Chỉ chạy 1 lần
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    });
+    
+    reveals.forEach(reveal => {
+        observer.observe(reveal);
+    });
+}
+
 // Chạy code khởi tạo khi DOM tải xong
 document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
+    initRevealAnimations();
 });
