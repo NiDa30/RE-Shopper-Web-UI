@@ -94,7 +94,7 @@ if(newsletterForm) {
         e.preventDefault();
         const input = newsletterForm.querySelector('input').value;
         if(input) {
-            alert(\`Cảm ơn bạn đã đăng ký với email: \${input}. Chúng tôi sẽ gửi thông báo sớm nhất!\`);
+            alert(`Cảm ơn bạn đã đăng ký với email: ${input}. Chúng tôi sẽ gửi thông báo sớm nhất!`);
             newsletterForm.reset();
         }
     });
