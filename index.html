@@ -58,7 +58,7 @@
       <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="container hero-container">
-          <div class="hero-content">
+          <div class="hero-content reveal-left">
             <span class="badge">Bộ sưu tập mới 2026</span>
             <h1>
               Định hình phong cách <br /><span class="highlight"
@@ -77,7 +77,7 @@
               <a href="#categories" class="btn btn-outline">Khám phá thêm</a>
             </div>
           </div>
-          <div class="hero-image">
+          <div class="hero-image reveal-right">
             <div class="image-wrapper">
               <img
                 src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800"
@@ -91,7 +91,7 @@
       <!-- Products Section -->
       <section id="shop" class="products">
         <div class="container">
-          <div class="section-header">
+          <div class="section-header reveal">
             <h2>Sản phẩm nổi bật</h2>
             <a href="#" class="view-all"
               >Xem tất cả <ion-icon name="chevron-forward-outline"></ion-icon
@@ -108,11 +108,11 @@
           style="background-color: #f9fafb; padding: 60px 0"
         >
           <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
               <h2>Danh mục sản phẩm</h2>
             </div>
             <div class="product-grid">
-              <div class="product-card" style="text-align: center">
+              <div class="product-card reveal" style="text-align: center">
                 <img
                   src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=400"
                   alt="Thời trang Nam"
@@ -120,7 +120,10 @@
                 />
                 <h3 style="margin-top: 15px">Thời trang Nam</h3>
               </div>
-              <div class="product-card" style="text-align: center">
+              <div
+                class="product-card reveal delay-100"
+                style="text-align: center"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=400"
                   alt="Thời trang Nữ"
@@ -128,7 +131,10 @@
                 />
                 <h3 style="margin-top: 15px">Thời trang Nữ</h3>
               </div>
-              <div class="product-card" style="text-align: center">
+              <div
+                class="product-card reveal delay-200"
+                style="text-align: center"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
                   alt="Phụ kiện"
@@ -141,9 +147,73 @@
         </section>
       </section>
 
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container about-container">
+          <div class="about-image reveal-left">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800"
+                alt="Về RE Shopper"
+                loading="lazy"
+              />
+              <div class="experience-badge">
+                <span class="number">10+</span>
+                <span class="text">Năm kinh<br />nghiệm</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content reveal-right">
+            <span class="badge">Câu chuyện của chúng tôi</span>
+            <h2>
+              Tuyệt tác thời trang <br /><span class="highlight"
+                >đánh thức</span
+              >
+              phong cách.
+            </h2>
+            <p>
+              Tại RE Shopper, chúng tôi tin rằng thời trang không chỉ là những
+              gì bạn khoác lên người, mà là nghệ thuật kể câu chuyện thực sự của
+              riêng bạn. Chúng tôi mang đến những bộ sưu tập cao cấp được tuyển
+              chọn khắt khe, nơi mọi chi tiết đều được chăm chút tỉ mỉ từ các
+              nhà thiết kế hàng đầu thế giới.
+            </p>
+            <div class="features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <ion-icon name="diamond-outline"></ion-icon>
+                </div>
+                <div>
+                  <h4>Chất liệu thượng hạng</h4>
+                  <p>
+                    Sản phẩm cam kết chính hãng với nguồn sợi vải cao cấp vượt
+                    thời gian.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <div>
+                  <h4>Thiết kế độc quyền</h4>
+                  <p>
+                    Mỗi món đồ là một kiệt tác, đón đầu và dẫn dắt xu hướng quốc
+                    tế.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="#shop" class="btn btn-primary"
+              >Khám phá ngay <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+
       <!-- Newsletter -->
       <section class="newsletter">
-        <div class="container newsletter-container">
+        <div class="container newsletter-container reveal">
           <div class="newsletter-content">
             <h2>Nhận ưu đãi độc quyền</h2>
             <p>
@@ -160,7 +230,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer-container reveal">
         <div class="footer-brand">
           <a href="#" class="logo">RE<span>Shopper</span></a>
           <p>
